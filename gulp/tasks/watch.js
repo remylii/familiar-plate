@@ -11,4 +11,6 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function() {
   gulp.watch(config.path.jade.watch, ['jade']);
+
+  gulp.watch(config.path.sass.watch, ['sass']);
 });

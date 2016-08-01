@@ -14,11 +14,28 @@ var config = {
     pretty: true
   },
 
+  // style
+  style: {
+    autoprefixer: {
+      browser: ['last 3 version', 'ie >= 9', 'Android 4.0']
+    },
+
+    sass: {
+      outputStyle: 'compressed'
+    }
+  },
+
   path: {
     jade: {
       src: ['src/view/**/*.jade', '!src/view/**/_*.jade'],
       dest: 'public',
       watch: ['src/view/**/*.jade']
+    },
+
+    sass: {
+      src: ['src/style/**/*.{scss,sass}'],
+      dest: 'public/css',
+      watch: ['src/style/**/*.{scss,sass}']
     }
   }
 };

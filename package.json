@@ -10,11 +10,15 @@
   "author": "remyli",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.4",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
     "require-dir": "^0.3.0"
   }
 }
