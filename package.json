@@ -10,6 +10,7 @@
   "author": "remyli",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "require-dir": "^0.3.0"
   }
 }

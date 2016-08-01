@@ -1,7 +1,4 @@
 'use strict'
 
-var gulp = require('gulp');
-
-gulp.task('default', function() {
-  console.log('Hello, world!');
-});
+var requireDir = require('require-dir');
+var gulpDir = requireDir('./gulp/tasks', {recurse: true});
