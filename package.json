@@ -1,0 +1,15 @@
+{
+  "name": "frontbase",
+  "version": "1.0.0",
+  "description": "This is toolkit for front-side develop. Use gulp.",
+  "main": "index.js",
+  "scripts": {
+    "task": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "remyli",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
