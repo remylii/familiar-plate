@@ -12,3 +12,7 @@
     clear: both;
   }
 }
+
+.sprite-bath {
+  @include sprite($sprite-bath);
+}

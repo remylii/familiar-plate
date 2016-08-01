@@ -25,6 +25,25 @@ var config = {
     }
   },
 
+  // sprite css and image
+  sprite: {
+    spritesmith: {
+      imgName: 'sprite.png',
+      cssName: '_sprite.scss',
+      imgPath: '../img/sprite/sprite.png?' + new Date().getTime(),
+      cssFormat: 'scss',
+      cssVarMap: function(sprite) {
+        sprite.name = 'sprite-' + sprite.name;
+      }
+    },
+    img: {
+      dest: 'public/img/sprite/'
+    },
+    css: {
+      dest: 'src/style/sprite/'
+    }
+  },
+
   path: {
     jade: {
       src: ['src/view/**/*.jade', '!src/view/**/_*.jade'],
@@ -36,6 +55,11 @@ var config = {
       src: ['src/style/**/*.{scss,sass}'],
       dest: 'public/css',
       watch: ['src/style/**/*.{scss,sass}']
+    },
+
+    sprite: {
+      src: ['src/img/sprite/**/*.{png,jpg,jpeg}'],
+      watch: ['src/img/sprite/**/*.{png,jpg,jpeg}']
     }
   }
 };

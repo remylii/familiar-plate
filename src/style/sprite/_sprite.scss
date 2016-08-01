@@ -1,0 +1,151 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sprite-bath-name: 'sprite-bath';
+$sprite-bath-x: 0px;
+$sprite-bath-y: 0px;
+$sprite-bath-offset-x: 0px;
+$sprite-bath-offset-y: 0px;
+$sprite-bath-width: 30px;
+$sprite-bath-height: 30px;
+$sprite-bath-total-width: 90px;
+$sprite-bath-total-height: 60px;
+$sprite-bath-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-bath: (0px, 0px, 0px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-bath', );
+$sprite-humidifier-name: 'sprite-humidifier';
+$sprite-humidifier-x: 30px;
+$sprite-humidifier-y: 0px;
+$sprite-humidifier-offset-x: -30px;
+$sprite-humidifier-offset-y: 0px;
+$sprite-humidifier-width: 30px;
+$sprite-humidifier-height: 30px;
+$sprite-humidifier-total-width: 90px;
+$sprite-humidifier-total-height: 60px;
+$sprite-humidifier-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-humidifier: (30px, 0px, -30px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-humidifier', );
+$sprite-internet-name: 'sprite-internet';
+$sprite-internet-x: 0px;
+$sprite-internet-y: 30px;
+$sprite-internet-offset-x: 0px;
+$sprite-internet-offset-y: -30px;
+$sprite-internet-width: 30px;
+$sprite-internet-height: 30px;
+$sprite-internet-total-width: 90px;
+$sprite-internet-total-height: 60px;
+$sprite-internet-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-internet: (0px, 30px, 0px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-internet', );
+$sprite-parking-name: 'sprite-parking';
+$sprite-parking-x: 30px;
+$sprite-parking-y: 30px;
+$sprite-parking-offset-x: -30px;
+$sprite-parking-offset-y: -30px;
+$sprite-parking-width: 30px;
+$sprite-parking-height: 30px;
+$sprite-parking-total-width: 90px;
+$sprite-parking-total-height: 60px;
+$sprite-parking-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-parking: (30px, 30px, -30px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-parking', );
+$sprite-pool-name: 'sprite-pool';
+$sprite-pool-x: 60px;
+$sprite-pool-y: 0px;
+$sprite-pool-offset-x: -60px;
+$sprite-pool-offset-y: 0px;
+$sprite-pool-width: 30px;
+$sprite-pool-height: 30px;
+$sprite-pool-total-width: 90px;
+$sprite-pool-total-height: 60px;
+$sprite-pool-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-pool: (60px, 0px, -60px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-pool', );
+$sprite-toilet-name: 'sprite-toilet';
+$sprite-toilet-x: 60px;
+$sprite-toilet-y: 30px;
+$sprite-toilet-offset-x: -60px;
+$sprite-toilet-offset-y: -30px;
+$sprite-toilet-width: 30px;
+$sprite-toilet-height: 30px;
+$sprite-toilet-total-width: 90px;
+$sprite-toilet-total-height: 60px;
+$sprite-toilet-image: '../img/sprite/sprite.png?1470044570102';
+$sprite-toilet: (60px, 30px, -60px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png?1470044570102', 'sprite-toilet', );
+$spritesheet-width: 90px;
+$spritesheet-height: 60px;
+$spritesheet-image: '../img/sprite/sprite.png?1470044570102';
+$spritesheet-sprites: ($sprite-bath, $sprite-humidifier, $sprite-internet, $sprite-parking, $sprite-pool, $sprite-toilet, );
+$spritesheet: (90px, 60px, '../img/sprite/sprite.png?1470044570102', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
