@@ -25,12 +25,12 @@ var config = {
     }
   },
 
-  // sprite css and image
+  // sprite css and image  @todo  + new Date().getTime()
   sprite: {
     spritesmith: {
       imgName: 'sprite.png',
       cssName: '_sprite.scss',
-      imgPath: '../img/sprite/sprite.png?' + new Date().getTime(),
+      imgPath: '../img/sprite/sprite.png',
       cssFormat: 'scss',
       cssVarMap: function(sprite) {
         sprite.name = 'sprite-' + sprite.name;
