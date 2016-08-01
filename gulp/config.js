@@ -60,6 +60,12 @@ var config = {
     sprite: {
       src: ['src/img/sprite/**/*.{png,jpg,jpeg}'],
       watch: ['src/img/sprite/**/*.{png,jpg,jpeg}']
+    },
+
+    imagecopy: {
+      src: ['src/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**'],
+      dest: 'public/img',
+      watch: ['src/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**']
     }
   }
 };
