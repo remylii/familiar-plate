@@ -11,7 +11,7 @@ var loader = require('gulp-load-plugins');
 
 var $ = loader({
   pattern: ['gulp-*', 'gulp.*'],
-  replaceString: /\bgulp[^-.]/
+  replaceString: /\bgulp[\-.]/
 });
 
 module.exports = $;
