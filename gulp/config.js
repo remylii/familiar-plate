@@ -12,6 +12,11 @@ var config = {
   // htmlhint
   htmlhint: '.htmlhintrc',
 
+  // htmlmin options
+  htmlmin: {
+    collapseWhitespace: true
+  },
+
   // gulp-jade options
   jade: {
     pretty: true
