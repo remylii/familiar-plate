@@ -10,6 +10,7 @@ var gulp = require('gulp'),
   config = require('../config');
 
 gulp.task('watch', function() {
+  gulp.watch(config.path.html.watch, ['htmlhint']);
   gulp.watch(config.path.jade.watch, ['jade']);
   gulp.watch(config.path.sass.watch, ['sass']);
   gulp.watch(config.path.sprite.watch, ['sprite']);

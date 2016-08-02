@@ -9,6 +9,9 @@ var config = {
   // dist target directory path
   dist_dir: 'public',
 
+  // htmlhint
+  htmlhint: '.htmlhintrc',
+
   // gulp-jade options
   jade: {
     pretty: true
@@ -45,6 +48,12 @@ var config = {
   },
 
   path: {
+    html: {
+      src: ['public/**/*.html'],
+      dest: 'public',
+      watch: ['public/**/*.html']
+    },
+
     jade: {
       src: ['src/view/**/*.jade', '!src/view/**/_*.jade'],
       dest: 'public',
