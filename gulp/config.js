@@ -52,6 +52,13 @@ var config = {
     }
   },
 
+  // gulp-imagemin options
+  imagemin: {
+    progressive: true,
+    optimizatoinLevel: 7,
+    interlaced: false
+  },
+
   path: {
     html: {
       src: ['public/**/*.html'],
@@ -78,6 +85,12 @@ var config = {
 
     imagecopy: {
       src: ['src/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**'],
+      dest: 'public/img',
+      watch: ['src/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**']
+    },
+
+    imagemin: {
+      src: ['public/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**'],
       dest: 'public/img',
       watch: ['src/img/**/*.{png,jpeg,jpg,gif}', '!src/img/sprite/**']
     }
