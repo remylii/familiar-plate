@@ -33,6 +33,13 @@ var config = {
     }
   },
 
+  // scss-lint
+  scsslint: {
+    config: 'scss-lint.yml',
+    bundleExec: true
+    // reporterOutputFormat: 'Checkstyle'
+  },
+
   // sprite css and image  @todo  + new Date().getTime()
   sprite: {
     spritesmith: {

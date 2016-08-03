@@ -23,6 +23,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
     "gulp.spritesmith": "^6.2.1",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2"
