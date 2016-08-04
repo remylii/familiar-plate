@@ -16,136 +16,161 @@ $sprite-bath-x: 0px;
 $sprite-bath-y: 0px;
 $sprite-bath-offset-x: 0px;
 $sprite-bath-offset-y: 0px;
-$sprite-bath-width: 30px;
-$sprite-bath-height: 30px;
-$sprite-bath-total-width: 90px;
-$sprite-bath-total-height: 60px;
+$sprite-bath-width: 15px;
+$sprite-bath-height: 15px;
+$sprite-bath-total-width: 45px;
+$sprite-bath-total-height: 30px;
 $sprite-bath-image: '../img/sprite/sprite.png';
-$sprite-bath: (0px, 0px, 0px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-bath', );
+$sprite-bath: (0px, 0px, 0px, 0px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-bath', );
 $sprite-humidifier-name: 'sprite-humidifier';
-$sprite-humidifier-x: 30px;
+$sprite-humidifier-x: 15px;
 $sprite-humidifier-y: 0px;
-$sprite-humidifier-offset-x: -30px;
+$sprite-humidifier-offset-x: -15px;
 $sprite-humidifier-offset-y: 0px;
-$sprite-humidifier-width: 30px;
-$sprite-humidifier-height: 30px;
-$sprite-humidifier-total-width: 90px;
-$sprite-humidifier-total-height: 60px;
+$sprite-humidifier-width: 15px;
+$sprite-humidifier-height: 15px;
+$sprite-humidifier-total-width: 45px;
+$sprite-humidifier-total-height: 30px;
 $sprite-humidifier-image: '../img/sprite/sprite.png';
-$sprite-humidifier: (30px, 0px, -30px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-humidifier', );
+$sprite-humidifier: (15px, 0px, -15px, 0px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-humidifier', );
 $sprite-internet-name: 'sprite-internet';
 $sprite-internet-x: 0px;
-$sprite-internet-y: 30px;
+$sprite-internet-y: 15px;
 $sprite-internet-offset-x: 0px;
-$sprite-internet-offset-y: -30px;
-$sprite-internet-width: 30px;
-$sprite-internet-height: 30px;
-$sprite-internet-total-width: 90px;
-$sprite-internet-total-height: 60px;
+$sprite-internet-offset-y: -15px;
+$sprite-internet-width: 15px;
+$sprite-internet-height: 15px;
+$sprite-internet-total-width: 45px;
+$sprite-internet-total-height: 30px;
 $sprite-internet-image: '../img/sprite/sprite.png';
-$sprite-internet: (0px, 30px, 0px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-internet', );
+$sprite-internet: (0px, 15px, 0px, -15px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-internet', );
 $sprite-parking-name: 'sprite-parking';
-$sprite-parking-x: 30px;
-$sprite-parking-y: 30px;
-$sprite-parking-offset-x: -30px;
-$sprite-parking-offset-y: -30px;
-$sprite-parking-width: 30px;
-$sprite-parking-height: 30px;
-$sprite-parking-total-width: 90px;
-$sprite-parking-total-height: 60px;
+$sprite-parking-x: 15px;
+$sprite-parking-y: 15px;
+$sprite-parking-offset-x: -15px;
+$sprite-parking-offset-y: -15px;
+$sprite-parking-width: 15px;
+$sprite-parking-height: 15px;
+$sprite-parking-total-width: 45px;
+$sprite-parking-total-height: 30px;
 $sprite-parking-image: '../img/sprite/sprite.png';
-$sprite-parking: (30px, 30px, -30px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-parking', );
+$sprite-parking: (15px, 15px, -15px, -15px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-parking', );
 $sprite-pool-name: 'sprite-pool';
-$sprite-pool-x: 60px;
+$sprite-pool-x: 30px;
 $sprite-pool-y: 0px;
-$sprite-pool-offset-x: -60px;
+$sprite-pool-offset-x: -30px;
 $sprite-pool-offset-y: 0px;
-$sprite-pool-width: 30px;
-$sprite-pool-height: 30px;
-$sprite-pool-total-width: 90px;
-$sprite-pool-total-height: 60px;
+$sprite-pool-width: 15px;
+$sprite-pool-height: 15px;
+$sprite-pool-total-width: 45px;
+$sprite-pool-total-height: 30px;
 $sprite-pool-image: '../img/sprite/sprite.png';
-$sprite-pool: (60px, 0px, -60px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-pool', );
+$sprite-pool: (30px, 0px, -30px, 0px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-pool', );
 $sprite-toilet-name: 'sprite-toilet';
-$sprite-toilet-x: 60px;
-$sprite-toilet-y: 30px;
-$sprite-toilet-offset-x: -60px;
-$sprite-toilet-offset-y: -30px;
-$sprite-toilet-width: 30px;
-$sprite-toilet-height: 30px;
-$sprite-toilet-total-width: 90px;
-$sprite-toilet-total-height: 60px;
+$sprite-toilet-x: 30px;
+$sprite-toilet-y: 15px;
+$sprite-toilet-offset-x: -30px;
+$sprite-toilet-offset-y: -15px;
+$sprite-toilet-width: 15px;
+$sprite-toilet-height: 15px;
+$sprite-toilet-total-width: 45px;
+$sprite-toilet-total-height: 30px;
 $sprite-toilet-image: '../img/sprite/sprite.png';
-$sprite-toilet: (60px, 30px, -60px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite.png', 'sprite-toilet', );
-$spritesheet-width: 90px;
-$spritesheet-height: 60px;
+$sprite-toilet: (30px, 15px, -30px, -15px, 15px, 15px, 45px, 30px, '../img/sprite/sprite.png', 'sprite-toilet', );
+$sprite-bath-2x-name: 'sprite-bath@2x';
+$sprite-bath-2x-x: 0px;
+$sprite-bath-2x-y: 0px;
+$sprite-bath-2x-offset-x: 0px;
+$sprite-bath-2x-offset-y: 0px;
+$sprite-bath-2x-width: 30px;
+$sprite-bath-2x-height: 30px;
+$sprite-bath-2x-total-width: 90px;
+$sprite-bath-2x-total-height: 60px;
+$sprite-bath-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-bath-2x: (0px, 0px, 0px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-bath@2x', );
+$sprite-humidifier-2x-name: 'sprite-humidifier@2x';
+$sprite-humidifier-2x-x: 30px;
+$sprite-humidifier-2x-y: 0px;
+$sprite-humidifier-2x-offset-x: -30px;
+$sprite-humidifier-2x-offset-y: 0px;
+$sprite-humidifier-2x-width: 30px;
+$sprite-humidifier-2x-height: 30px;
+$sprite-humidifier-2x-total-width: 90px;
+$sprite-humidifier-2x-total-height: 60px;
+$sprite-humidifier-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-humidifier-2x: (30px, 0px, -30px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-humidifier@2x', );
+$sprite-internet-2x-name: 'sprite-internet@2x';
+$sprite-internet-2x-x: 0px;
+$sprite-internet-2x-y: 30px;
+$sprite-internet-2x-offset-x: 0px;
+$sprite-internet-2x-offset-y: -30px;
+$sprite-internet-2x-width: 30px;
+$sprite-internet-2x-height: 30px;
+$sprite-internet-2x-total-width: 90px;
+$sprite-internet-2x-total-height: 60px;
+$sprite-internet-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-internet-2x: (0px, 30px, 0px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-internet@2x', );
+$sprite-parking-2x-name: 'sprite-parking@2x';
+$sprite-parking-2x-x: 30px;
+$sprite-parking-2x-y: 30px;
+$sprite-parking-2x-offset-x: -30px;
+$sprite-parking-2x-offset-y: -30px;
+$sprite-parking-2x-width: 30px;
+$sprite-parking-2x-height: 30px;
+$sprite-parking-2x-total-width: 90px;
+$sprite-parking-2x-total-height: 60px;
+$sprite-parking-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-parking-2x: (30px, 30px, -30px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-parking@2x', );
+$sprite-pool-2x-name: 'sprite-pool@2x';
+$sprite-pool-2x-x: 60px;
+$sprite-pool-2x-y: 0px;
+$sprite-pool-2x-offset-x: -60px;
+$sprite-pool-2x-offset-y: 0px;
+$sprite-pool-2x-width: 30px;
+$sprite-pool-2x-height: 30px;
+$sprite-pool-2x-total-width: 90px;
+$sprite-pool-2x-total-height: 60px;
+$sprite-pool-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-pool-2x: (60px, 0px, -60px, 0px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-pool@2x', );
+$sprite-toilet-2x-name: 'sprite-toilet@2x';
+$sprite-toilet-2x-x: 60px;
+$sprite-toilet-2x-y: 30px;
+$sprite-toilet-2x-offset-x: -60px;
+$sprite-toilet-2x-offset-y: -30px;
+$sprite-toilet-2x-width: 30px;
+$sprite-toilet-2x-height: 30px;
+$sprite-toilet-2x-total-width: 90px;
+$sprite-toilet-2x-total-height: 60px;
+$sprite-toilet-2x-image: '../img/sprite/sprite@2x.png';
+$sprite-toilet-2x: (60px, 30px, -60px, -30px, 30px, 30px, 90px, 60px, '../img/sprite/sprite@2x.png', 'sprite-toilet@2x', );
+$spritesheet-width: 45px;
+$spritesheet-height: 30px;
 $spritesheet-image: '../img/sprite/sprite.png';
 $spritesheet-sprites: ($sprite-bath, $sprite-humidifier, $sprite-internet, $sprite-parking, $sprite-pool, $sprite-toilet, );
-$spritesheet: (90px, 60px, '../img/sprite/sprite.png', $spritesheet-sprites, );
+$spritesheet: (45px, 30px, '../img/sprite/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 90px;
+$retina-spritesheet-height: 60px;
+$retina-spritesheet-image: '../img/sprite/sprite@2x.png';
+$retina-spritesheet-sprites: ($sprite-bath-2x, $sprite-humidifier-2x, $sprite-internet-2x, $sprite-parking-2x, $sprite-pool-2x, $sprite-toilet-2x, );
+$retina-spritesheet: (90px, 60px, '../img/sprite/sprite@2x.png', $retina-spritesheet-sprites, );
 
 /*
-The provided mixins are intended to be used with the array-like variables
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
 
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
 */
-@mixin sprite-width($sprite) {
-  width: nth($sprite, 5);
-}
+$sprite-bath-group-name: 'sprite-bath';
+$sprite-bath-group: ('sprite-bath', $sprite-bath, $sprite-bath-2x, );
+$sprite-humidifier-group-name: 'sprite-humidifier';
+$sprite-humidifier-group: ('sprite-humidifier', $sprite-humidifier, $sprite-humidifier-2x, );
+$sprite-internet-group-name: 'sprite-internet';
+$sprite-internet-group: ('sprite-internet', $sprite-internet, $sprite-internet-2x, );
+$sprite-parking-group-name: 'sprite-parking';
+$sprite-parking-group: ('sprite-parking', $sprite-parking, $sprite-parking-2x, );
+$sprite-pool-group-name: 'sprite-pool';
+$sprite-pool-group: ('sprite-pool', $sprite-pool, $sprite-pool-2x, );
+$sprite-toilet-group-name: 'sprite-toilet';
+$sprite-toilet-group: ('sprite-toilet', $sprite-toilet, $sprite-toilet-2x, );
+$retina-groups: ($sprite-bath-group, $sprite-humidifier-group, $sprite-internet-group, $sprite-parking-group, $sprite-pool-group, $sprite-toilet-group, );
 
-@mixin sprite-height($sprite) {
-  height: nth($sprite, 6);
-}
 
-@mixin sprite-position($sprite) {
-  $sprite-offset-x: nth($sprite, 3);
-  $sprite-offset-y: nth($sprite, 4);
-  background-position: $sprite-offset-x  $sprite-offset-y;
-}
-
-@mixin sprite-image($sprite) {
-  $sprite-image: nth($sprite, 9);
-  background-image: url(#{$sprite-image});
-}
-
-@mixin sprite($sprite) {
-  @include sprite-image($sprite);
-  @include sprite-position($sprite);
-  @include sprite-width($sprite);
-  @include sprite-height($sprite);
-}
-
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-@mixin sprites($sprites) {
-  @each $sprite in $sprites {
-    $sprite-name: nth($sprite, 10);
-    .#{$sprite-name} {
-      @include sprite($sprite);
-    }
-  }
-}

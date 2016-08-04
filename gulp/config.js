@@ -46,7 +46,13 @@ var config = {
       imgName: 'sprite.png',
       cssName: '_sprite.scss',
       imgPath: '../img/sprite/sprite.png',
-      cssFormat: 'scss',
+      cssFormat: 'scss_retina',
+      retinaSrcFilter: ['src/img/sprite/retina/*@2x.png'],
+      retinaImgName: 'sprite@2x.png',
+      retinaImgPath: '../img/sprite/sprite@2x.png',
+      cssOpts: {
+        functions: false
+      },
       cssVarMap: function(sprite) {
         sprite.name = 'sprite-' + sprite.name;
       }
