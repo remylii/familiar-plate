@@ -15,14 +15,14 @@ This is toolkit for front-side develop. use gulp.
 * jade
 * sass
 * scsslint(disabled)
-  * stylelint (postcss::pluginsと共存)
+  * stylelint (postcss::pluginsにしている)
+* server
 * sprite
 * watch
 
 ## todo
 
 * js
-* browser-sync
 
 ### postcss
 

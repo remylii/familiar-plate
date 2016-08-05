@@ -8,6 +8,5 @@
 
 var gulp  = require('gulp');
 
-gulp.task('default', function() {
-  console.log('Hello, world');
-});
+var tasks = ["server", "watch"];
+gulp.task('default', tasks);

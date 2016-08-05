@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.14.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-htmlhint": "^0.3.1",
@@ -29,6 +30,7 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
     "stylelint": "^7.1.0",
-    "stylelint-config-standard": "^12.0.0"
+    "stylelint-config-standard": "^12.0.0",
+    "ws": "^1.1.1"
   }
 }

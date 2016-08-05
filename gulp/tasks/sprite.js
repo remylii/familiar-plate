@@ -22,4 +22,6 @@ gulp.task('sprite', function() {
   // cssの保存先
   spriteData.css
     .pipe(gulp.dest(config.sprite.css.dest));
+
+  return spriteData;
 });

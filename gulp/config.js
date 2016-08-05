@@ -9,6 +9,34 @@ var config = {
   // dist target directory path
   dist_dir: 'public',
 
+  // broser-sync
+  browser: {
+    files: "./public/**/*",
+    server: {
+      baseDir: './public',
+      middleware: function(req, res, next) {
+        var timestamp = "[" + new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + "] ";
+        console.log(timestamp + req.method + " " + req.originalUrl + " - " +  req.connection.remoteAddress + " - " + req.headers['user-agent']);
+        next();
+      },
+    },
+    ui: {
+      port: 3001,
+    },
+    ghostMode: {
+      clicks: true,
+      scroll: true,
+      forms: {
+        submit: true,
+        inputs: true,
+        toggles: true
+      }
+    },
+    logLevel: "info",
+    notify: false,
+    open: false
+  },
+
   // htmlhint
   htmlhint: '.htmlhintrc',
 
