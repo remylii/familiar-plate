@@ -1,7 +1,7 @@
 frontbase
 ===========
 
-This is toolkit for front-side develop. use gulp.
+This is toolkit for front-side developer. use gulp.
 
 ## tasks
 
