@@ -30,6 +30,14 @@ var config = {
 
     sass: {
       outputStyle: 'compressed'
+    },
+
+    stylelint: {
+      configFile: ".stylelintrc"
+    },
+
+    postcssReporter: {
+      clearMessages: true
     }
   },
 
@@ -51,7 +59,7 @@ var config = {
       retinaImgName: 'sprite@2x.png',
       retinaImgPath: '../img/sprite/sprite@2x.png',
       cssOpts: {
-        functions: false
+        functions: true
       },
       cssVarMap: function(sprite) {
         sprite.name = 'sprite-' + sprite.name;

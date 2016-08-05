@@ -1,6 +1,7 @@
 /**
  * scss linter. use gulp-scss-lint.
  *
+ * @status disabled
  * @dependence  ruby, gem scss_lint
  * @version  1.0.0
  * @branch   feature/scss_lint

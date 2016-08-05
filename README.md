@@ -14,7 +14,8 @@ This is toolkit for front-side develop. use gulp.
 * imagemin
 * jade
 * sass
-* scsslint
+* scsslint(disabled)
+  * stylelint (postcss::pluginsと共存)
 * sprite
 * watch
 
