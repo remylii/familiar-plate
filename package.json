@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "task": "gulp",
+    "preset": "cp .chk_browser.sample .chk_browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "remyli",

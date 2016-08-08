@@ -11,6 +11,7 @@ var config = {
 
   // broser-sync
   browser: {
+    chk_conf: '.chk_browser',
     files: "./public/**/*",
     server: {
       baseDir: './public',
