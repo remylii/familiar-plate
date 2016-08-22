@@ -13,7 +13,7 @@ gulp.task('build', function() {
   runSequence(
     'clean',
     'sprite',
-    ['imagecopy', 'sass', 'jade'],
+    ['imagecopy', 'sass', 'jade', 'iconfont'],
     'htmlhint',
     ['htmlmin', 'imagemin']
   );

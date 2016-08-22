@@ -102,6 +102,21 @@ var config = {
     }
   },
 
+  // iconfont
+  iconfont: {
+    opt: {
+      fontName: 'myfont',  // isRequired
+      // prependUnicode: true,  // recommended option
+      formats: ['ttf', 'eot', 'woff', 'svg'],
+      timestamp: Math.round(Date.now()/1000)
+    },
+    consolidate: {
+      fontName: 'myfont',
+      fontPath: '../fonts/',
+      className: 's'
+    }
+  },
+
   // gulp-imagemin options
   imagemin: {
     progressive: true,
@@ -111,9 +126,9 @@ var config = {
 
   path: {
     html: {
-      src: ['public/**/*.html'],
+      src: ['public/**/*.html', '!public/_iconfontGuide/**/*'],
       dest: 'public',
-      watch: ['public/**/*.html']
+      watch: ['public/**/*.html', '!public/_iconfontGuide/**/*']
     },
 
     jade: {
@@ -131,6 +146,20 @@ var config = {
     sprite: {
       src: ['src/img/sprite/**/*.{png,jpg,jpeg}'],
       watch: ['src/img/sprite/**/*.{png,jpg,jpeg}']
+    },
+
+    iconfont: {
+      src: ['src/icons/*.svg'],
+      watch: ['src/icons/*.svg'],
+      dest: {
+        font: 'public/fonts',
+        css: 'public/css',
+        html: 'public/_iconfontGuide'
+      },
+      templates: {
+        html: 'src/icons/templates/myfont.html',
+        css: 'src/icons/templates/myfont.css'
+      }
     },
 
     imagecopy: {
